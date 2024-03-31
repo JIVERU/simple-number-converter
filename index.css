@@ -1,5 +1,5 @@
 html, body {
-    margin-top: 25px;
+    margin-top: 15px;
     padding: 0;
     flex-direction: column;
     justify-content: center;
@@ -54,6 +54,12 @@ p {
 
 }
 
+.menu {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px;
+    margin: auto;
+}
 .radix-display {
     display: flex;
     height: 54px;
@@ -85,8 +91,8 @@ p {
     display: flex;
     flex-flow: row wrap;
     background-color: #252734;
-    max-width: 320px;
-    min-width: 320px;
+    max-width: 330px;
+    min-width: 330px;
     margin: auto;
     border-radius: 8px;
     gap: 5px;
@@ -98,7 +104,7 @@ p {
     flex-flow: row wrap;
     background-color: #2a363b;
     border-radius: 8px;
-    max-width: 320px;
+    max-width: 330px;
     margin: auto;
     gap: 5px;
     padding: 5px;
@@ -109,7 +115,7 @@ p {
     background-color: #2a363b;
     display: flex;
     flex-flow: column wrap;
-    min-width: 320px;
+    min-width: 330px;
     margin: auto;
     border-radius: 8px;
     gap: 5px;
@@ -142,8 +148,8 @@ button {
 
 #conv-swap {
     width: 40px;
-    background-color: #4C3B84; 
-    flex: -1;
+    background-color: #da5a49; 
+    max-width: 50px;
 }
 
 #conv-convert {
@@ -184,9 +190,13 @@ input {
     box-sizing: border-box;
     border-radius: 8px;
     border: 0;
-    margin-left: ;
-    text-align: left;
+    font-size: 20px;
+    text-align: center;
     padding-right: 20px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    
 }
 
 

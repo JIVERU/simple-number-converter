@@ -41,7 +41,7 @@ function toBin(num){
 }
 
 function toHex(num){
-    return (num >>> 0).toString(16);
+    return (num >>> 0).toString(16).toUpperCase();
 }
 
 function toDec(num, radix){
@@ -144,7 +144,7 @@ toOptionEl.addEventListener("change", function() {
 // Event listener for "input" event on input element
 mainInput.addEventListener("input", function(){
     // Update numInput value
-    let numInput = parseInt(mainInput.value);
+    let numInput = mainInput.value;
     // Convert input to desired radix and display
     mainOutput.value = converter(numInput, fromValue, toValue);
     // Update complement
@@ -155,7 +155,7 @@ mainInput.addEventListener("input", function(){
 // Event listener for "click" event on "convert" button
 convertBtn.addEventListener("click", function(){
     // Get input value
-    let numInput = parseInt(mainInput.value);
+    let numInput = mainInput.value;
     // Convert input to desired radix and display
     mainOutput.value = converter(numInput, fromValue, toValue);
     // Update complement
