@@ -76,7 +76,7 @@ function converter(num, fRadix, tRadix) {
         case 8:
             switch (tRadix) {
                 case 2:
-                    return toBin(num);
+                    return toBin(value);
                 case 10:
                     return value;
                 case 16:
